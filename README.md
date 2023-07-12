@@ -55,3 +55,10 @@ Features of the project:
     make run-checks
     ```
  
+ ## Day 2 - CI / CD
+
+ Your task is to build a pipeline with Github actions that will automate the deployment of task 3 whenever changes are pushed to the main branch of this repo.
+
+ Your pipelines should:
+    - Run the checks defined by the `Makefile` to ensure that the code works as intended and is compliant.
+    - If those checks pass then use terraform to make the required changes to the infrastructure.
