@@ -3,5 +3,5 @@ resource "aws_s3_bucket" "demo_bucket" {
 }
 
 resource "aws_s3_object" "demo_object" {
-# TO BE IMPLEMENTED
+  # TO BE IMPLEMENTED
 }
