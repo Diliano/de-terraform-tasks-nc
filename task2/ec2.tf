@@ -3,6 +3,9 @@ resource "aws_instance" "task_2_instance" {
   instance_type          = "t2.micro"
   key_name               = "TerraformTasks"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
+  
+  user_data = file("script.sh")
+  user_data_replace_on_change = true
 
   tags = {
     Name = "Task2Instance"
