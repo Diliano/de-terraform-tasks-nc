@@ -7,6 +7,8 @@ resource "aws_s3_bucket" "task_1_bucket" {
   }
 }
 
-# resource "aws_s3_object" "demo_object" {
-#   # TO BE IMPLEMENTED
-# }
+resource "aws_s3_object" "task_1_object" {
+  bucket = aws_s3_bucket.task_1_bucket.bucket
+  key = "test_file.txt"
+  source = "test_file.txt"
+}
