@@ -3,11 +3,11 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project = "TerraformTasks"
+      Project     = "TerraformTasks"
       Environment = "Dev"
-      ManagedBy = "Terraform"
-      Repository = "https://github.com/Diliano/de-terraform-tasks"
-      Owner = "NC-DP"
+      ManagedBy   = "Terraform"
+      Repository  = "https://github.com/Diliano/de-terraform-tasks"
+      Owner       = "NC-DP"
     }
   }
 }
